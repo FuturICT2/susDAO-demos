@@ -14,14 +14,14 @@
 
             $.getJSON('build/contracts/DemoContract.json', json => {
                 let provider = new ethers.providers.Web3Provider(window.ethereum);
-                contract = new ethers.Contract(contractAddress, json.abi, provider);
+                contract = new ethers.Contract(contractAddress, json.abi, provider.getSigner());
                 contract.foo().then(value => {
                     console.log(value);
                 });
             });
 
             function func() {
-                console.log('Hello, World!');
+                contract.setFoo(5);
             }
         </script>
         <button onclick="func()">do the thing</button>
