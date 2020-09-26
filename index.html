@@ -13,7 +13,7 @@
             let contract;
 
             $.getJSON('build/contracts/DemoContract.json', json => {
-                let provider = new ethers.providers.JsonRpcProvider('http://localhost:7545');
+                let provider = new ethers.providers.Web3Provider(window.ethereum);
                 contract = new ethers.Contract(contractAddress, json.abi, provider);
                 contract.foo().then(value => {
                     console.log(value);
