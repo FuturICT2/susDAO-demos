@@ -39,3 +39,7 @@ python3 -m http.server # quickest way to serve from current directory
 # --> http://localhost:8000/
 ```
 
+Create `contract-address.js` with the address of the deployed DemoContract:
+```js
+let contractAddress = '0x...';
+```
