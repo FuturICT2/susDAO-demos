@@ -23,3 +23,11 @@ npm install -g truffle
 truffle compile # creates DemoContract.json in the build/contracts/ folder
 truffle migrate # deploys the smart contract onto the blockchain
 ```
+
+## Interacting with it via command line
+
+```sh
+truffle console
+> DemoContract.deployed().then(inst => inst.foo())
+> DemoContract.deployed().then(inst => inst.setFoo(7))
+```
