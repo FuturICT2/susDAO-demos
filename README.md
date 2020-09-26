@@ -31,3 +31,11 @@ truffle console
 > DemoContract.deployed().then(inst => inst.foo())
 > DemoContract.deployed().then(inst => inst.setFoo(7))
 ```
+
+## Interacting with it via browser
+
+```sh
+python3 -m http.server # quickest way to serve from current directory
+# --> http://localhost:8000/
+```
+
