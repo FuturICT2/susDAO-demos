@@ -21,7 +21,12 @@
             });
 
             function func() {
-                contract.setFoo(5);
+                contract.setFoo(7).then(transaction => {
+                    console.log('transaction:', transaction);
+                    transaction.wait().then(receipt => {
+                        console.log("receipt: ", receipt);
+                    });
+                });
             }
         </script>
         <button onclick="func()">do the thing</button>
