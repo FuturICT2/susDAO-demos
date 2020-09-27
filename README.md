@@ -9,6 +9,10 @@ As shown live in Block IV of the [lecture](http://vvz.ethz.ch/Vorlesungsverzeich
 
 ## Deployment demo
 
+Note that the HTML-setup is not recommended as a boilerplate to start coding from, it was merely intended as "shortest path" to wiring up something functional in the browser during the live demo.
+
+For a proper dApp setup you might look into boilerplates like the [truffle react box](https://www.trufflesuite.com/boxes/react), [scaffold-eth](https://github.com/austintgriffith/scaffold-eth) or [create-eth-app](https://github.com/PaulRBerg/create-eth-app). There are also many tutorials out there to help you get going. The [pet shop one](https://www.trufflesuite.com/tutorials/pet-shop) was helpful to [me](https://github.com/benjaminaaron) back then - it seems a bit old now though.
+
 ### Setup
 
 ```sh
