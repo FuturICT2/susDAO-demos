@@ -1,6 +1,6 @@
 # Demos in the **Sustainable DAOs** lecture 2020
 
-As shown live in Block IV of the [lecture](http://vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lang=en&lerneinheitId=142566&semkez=2020W&ansicht=KATALOGDATEN&).
+As shown live in Block IV of the [lecture](http://vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lang=en&lerneinheitId=142566&semkez=2020W&ansicht=KATALOGDATEN&), see the recording [here](https://youtu.be/qP8dJb0Shas).
 
 ## #1 eth.build demo
 
@@ -57,7 +57,7 @@ let contractAddress = '0x...';
 
 ## Commit-walker script
 
-I wrote the `commit-walker.sh` script to advance in the git history commit by commit during the deployment live demo. Starting from the past on a new branch and cherry-picking one by one from `main` towards the latest. It uses `stepcounter` to read/write the next step and `git.log` to extract the respective commit hash. The command to list the hashes is:
+I wrote the `commit-walker.sh` script to advance in the git history commit by commit during the deployment live demo. Starting from the past on a new branch and cherry-picking one by one from `main` forward. It uses `stepcounter` to read/write the next step and `git.log` to extract the respective commit hash. The command to list the hashes is:
 
 ```sh
 git log --reverse --pretty=tformat:%h > git.log
